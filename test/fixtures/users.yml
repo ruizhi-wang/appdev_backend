@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+michael:
+  name: Michael Example
+  email: michael@example.
+  #We just defined the User.digest method. It turns the password below, i.e. 'password'
+  #into a bycrypt safe password
+  password_digest: <%= User.digest('password') %>
