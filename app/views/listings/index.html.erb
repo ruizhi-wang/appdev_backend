@@ -5,8 +5,14 @@
         <% @listing.each do |listing| %>
           <%= listing.name %>
           <%= listing.location %>
+          <%= link_to "Delete", listing_path(listing), method: :delete, class: "btn btn-primary" %>
         <br>
         <% end %>
+      </h1>
+    </section>
+    <section class="user_info">
+      <h1>
+        <%= link_to "Create new listing", new_listing_path, class: "btn btn-lg btn-primary" %>
       </h1>
     </section>
   </aside>
